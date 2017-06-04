@@ -2,7 +2,8 @@ import React from 'react';
 import {
     BrowserRouter,
     Route,
-    Switch
+    Switch,
+    Redirect
 } from 'react-router-dom';
 
 // Components
@@ -19,7 +20,7 @@ const App = () => (
     <div className="container">
       <Header />
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/react-router-practice" component={Home}/>
         <Route path="/about" render={ () => <About title='About Us!'/> }/>
         <Route path="/courses" component={Courses}/>
         <Route exact path="/teachers" component={Teachers}/>
