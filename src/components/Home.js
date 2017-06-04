@@ -6,7 +6,7 @@ class Home extends Component {
     e.preventDefault();
     let teacherName = this.name.value;
     let teacherTopic = this.topic.value;
-    let path = `teachers/${teacherTopic}/${teacherName}`;
+    let path = `/teachers/${teacherTopic}/${teacherName}`;
     this.props.history.push(path);
   }
 
